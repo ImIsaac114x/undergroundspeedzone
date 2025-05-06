@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Pedido de Pizzas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Pedidos de Pizzas</h1>
+  <h2 id="estado"></h2>
+
+  <form id="formulario">
+    <label for="pizza1">Pizza 1:</label>
+    <select id="pizza1" name="pizza1">
+      <option value="150">Mexicana ($150)</option>
+      <option value="140">Pepperoni ($140)</option>
+      <option value="120">Hawaiana ($120)</option>
+    </select>
+    <br><br>
+
+    <label for="pizza2">Pizza 2:</label>
+    <select id="pizza2" name="pizza2">
+      <option value="150">Mexicana ($150)</option>
+      <option value="140">Pepperoni ($140)</option>
+      <option value="120">Hawaiana ($120)</option>
+    </select>
+    <br><br>
+
+    <label for="pizza3">Pizza 3:</label>
+    <select id="pizza3" name="pizza3">
+      <option value="150">Mexicana ($150)</option>
+      <option value="140">Pepperoni ($140)</option>
+      <option value="120">Hawaiana ($120)</option>
+    </select>
+    <br><br>
+
+    <label for="complementos">Complementos:</label>
+    <input type="checkbox" class="complementos" value="30" checked> Refresco ($30)
+    <input type="checkbox" class="complementos" value="45"> Papas ($45)
+    <br><br>
+    <input type="checkbox" class="complementos" value="35"> Ensalada ($35)
+    <input type="checkbox" class="complementos" value="55"> Postre ($55)
+    <br><br>
+
+    <label for="metodoentrega">Método de entrega:</label>
+    <input type="radio" class="metodoentrega" name="metodoentrega" value="0" checked> Consumo local ($0)
+    <input type="radio" class="metodoentrega" name="metodoentrega" value="50"> Envío ($50)
+    <br><br>
+
+    <label for="metododepago">Método de pago:</label>
+<input type="radio" class="metododepago" name="metododepago" value="tarjeta" checked> Tarjeta
+<input type="radio" class="metododepago" name="metododepago" value="efectivo"> Efectivo
+<br><br>
+
+    <button id="boton1" type="button">Continuar con el Pedido</button>
+    <button id="boton2" type="button">Volver a la página principal</button>
+  </form>
+  <script src="script-pedidos.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bbas+Neue:wght@400;700&display=swap" rel="stylesheet">
+</body>
+</html>
+

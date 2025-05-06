@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Eurostile';
+    src: url('Eurostilebold.woff2') format('woff2'),
+         url('Eurostilebold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+body::before {
+  content: ""; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color: black;
+  opacity: 0.8;
+  z-index: -1; 
+}
+
+header{
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+  border-bottom: 1px solid white;
+}
+
+nav{
+  float: right;
+  margin-top: -3em;
+}
+
+footer{
+  position: fixed;
+  bottom: 1;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, body {
+  font-family: "Eurostile";
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline; 
+}
+
+a:active {
+  color: #c2b47c;
+}

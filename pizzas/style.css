@@ -1,0 +1,114 @@
+body {
+    color: rgb(235, 216, 181);
+    background-image: url('https://www.alidifirenze.fr/wp-content/uploads/2021/07/Pizzeria-Florence-Ali-di-Firenze-5.jpeg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body::before {
+    content: ""; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background-color: black;
+    opacity: 0.8;
+    z-index: -1; 
+}
+
+h1 {
+    font-family: 'Big Shoulders', sans-serif;
+    font-weight: 700;
+    color: #e77c34;
+}
+
+p {
+    font-family: 'Big Shoulders', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+header {
+    background-color: #e77c34;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #d3792f;
+    color: #8d400d;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+h1 {
+    color: #e77c34;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #8d510d;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #8d470d;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #e77c34;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #bd5b19;
+}
+
+p#total {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
