@@ -1,33 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mods - Underground Speed Zone</title>
-        <link rel="stylesheet" href="style.css">
-        <audio id="music" loop autoplay>
-            <source src="" type="audio/mpeg">
-        </audio>
-        <script src="/sources/music.js"></script>
-    </head>
-    <body>
-        <header>
-            <a href="/speedzone/indexspeed.html"><img src="/sources/img/uszW.png" width="250"></a>
-        </header>
-        <section>
-            <h2>Mods</h2>
-            <p>En esta sección encontrarás mods lorefriendly para los juegos de la saga Need For Speed.</p>
-            <h3>Videojuegos:</h3>
-                <a href="mods-ug.html"><img src="/sources/img/logos/undergound.png" width="200"></a>
-                <a href="mods-ug2.html"><img src="/sources/img/logos/underground2.png" width="200"></a>
-                <a href="mods-mw.html"><img src="/sources/img/logos/mostwanted.png" width="200"></a>
-                <a href="mods-c.html"><img src="/sources/img/logos/carbon.png" width="200"></a>
-        </section>
-        <footer>
-            <address>
-                <p>Isaac Trejo Herrera / 4º J</p>
-            </address>
-            <p>© 2004 Underground Speed Zone. Todos los derechos reservados.</p>
-        </footer>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mods - Underground Speed Zone</title>
+    <link rel="stylesheet" href="style.css" />
+    <audio id="music" loop autoplay>
+      <source src="" type="audio/mpeg" />
+    </audio>
+    <script src="/sources/music.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="../index.html">
+          <img
+            src="../sources/img/logos/uszW.png"
+            width="150"
+            alt="Underground Speed Zone Logo"
+          />
+        </a>
+      </div>
+      <button class="hamburger">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="modsspeed.html">Mods</a></li>
+        <li>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=isaacth114x@gmail.com&su=Contacto%20desde%20Underground%20Speed%20Zone&body=Hola,%20quiero%20ponerme%20en%20contacto%20contigo."
+            target="_blank"
+            >Contacto</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Descripción introductoria -->
+    <section class="intro">
+      <h2>Mods para la Saga Need For Speed</h2>
+      <p>
+        Bienvenido a la sección de Mods de Underground Speed Zone. Aquí podrás
+        encontrar una selección curada de mods “lorefriendly” para cada título
+        de la saga Need For Speed. Navega por el carrusel para seleccionar el
+        juego que más te interese y acceder a su listado de modificaciones:
+        desde personalizaciones de interfaz, mejoras gráficas, correcciones
+        widescreen y mucho más. ¡Disfruta mejorando tu experiencia de carrera en
+        cada uno de estos clásicos!
+      </p>
+    </section>
+
+    <!-- Carrusel -->
+    <div class="carousel">
+      <div class="carousel-images">
+        <!-- Slide 1: NFS Underground -->
+        <a href="mods-ug.html" target="_blank">
+          <img
+            src="https://specialgamesclub.ru/wp-content/uploads/2023/07/Need-for-Speed-Underground-Game-Wallpaper.jpg"
+            alt="Need For Speed Underground"
+          />
+        </a>
+        <!-- Slide 2: NFS Underground 2 -->
+        <a href="mods-ug2.html" target="_blank">
+          <img
+            src="https://specialgamesclub.ru/wp-content/uploads/2023/07/Need-for-Speed-Underground-2-Game-Wallpaper.jpg"
+            alt="Need For Speed Underground 2"
+          />
+        </a>
+        <!-- Slide 3: NFS Most Wanted -->
+        <a href="mods-mw.html" target="_blank">
+          <img
+            src="https://cdn.sargarme.com/uploads/2023/07/NFS-Most-Wanted-1000x563.jpg"
+            alt="Need For Speed Most Wanted"
+          />
+        </a>
+        <!-- Slide 4: NFS Carbon -->
+        <a href="mods-c.html" target="_blank">
+          <img
+            src="https://wallpaperaccess.com/full/3591913.jpg"
+            alt="Need For Speed Carbon"
+          />
+        </a>
+      </div>
+      <!-- Indicadores -->
+      <div class="carousel-indicators">
+        <button data-index="0" class="active"></button>
+        <button data-index="1"></button>
+        <button data-index="2"></button>
+        <button data-index="3"></button>
+      </div>
+    </div>
+
+    <!-- Logos de juegos (opcional, debajo del carrusel) -->
+    <section>
+      <h3>Videojuegos disponibles:</h3>
+      <p>Desde los siguientes enlaces podrás descargar los videojuegos completamente gratis.</p>
+      <div class="game-logos">
+        <a href="http://pasted.co/4599dad6">
+          <img
+            src="../sources/img/logos/undergound.png"
+            width="200"
+            alt="Logo NFS Underground"
+          />
+        </a>
+        <a href="http://pasted.co/c24f1abc">
+          <img
+            src="../sources/img/logos/underground2.png"
+            width="200"
+            alt="Logo NFS Underground 2"
+          />
+        </a>
+        <a href="http://pasted.co/9b40380e">
+          <img
+            src="../sources/img/logos/mostwanted.png"
+            width="200"
+            alt="Logo NFS Most Wanted"
+          />
+        </a>
+        <a href="http://pasted.co/10d7106b">
+          <img
+            src="../sources/img/logos/carbon.png"
+            width="200"
+            alt="Logo NFS Carbon"
+          />
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <address>
+        <p>Isaac Trejo Herrera / 4º J</p>
+      </address>
+      <p>© 2004 Underground Speed Zone. Todos los derechos reservados.</p>
+    </footer>
+
+    <a
+      href="https://mail.google.com/mail/?view=cm&fs=1&to=isaacth114x@gmail.com&su=Contacto%20desde%20Underground%20Speed%20Zone&body=Hola,%20quiero%20ponerme%20en%20contacto%20contigo."
+      target="_blank"
+      class="contact-button"
+    >
+      <img
+        src="https://cdn.pixabay.com/photo/2013/07/13/12/04/button-159102_1280.png"
+        width="50"
+        alt="Contacto"
+      />
+    </a>
+
+    <!-- Enlazamos al JS del carrusel y hamburguesa -->
+    <script src="script-carrusel.js"></script>
+  </body>
 </html>

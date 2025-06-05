@@ -112,3 +112,21 @@ p#total {
     text-align: center;
     margin-top: 20px;
 }
+
+.contact-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: block;
+}
+
+.contact-button img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.contact-button:hover img {
+    transform: scale(1.1);
+}

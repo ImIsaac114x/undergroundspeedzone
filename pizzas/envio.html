@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Datos de Envío - Pedido de Pizzas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Datos para el Envío</h1>
+  <form id="formEnvio">
+    <label for="nombreEnvio">Nombre completo:</label><br>
+    <input type="text" id="nombreEnvio" name="nombreEnvio" required><br><br>
+
+    <label for="direccion">Dirección de entrega:</label><br>
+    <textarea id="direccion" name="direccion" rows="3" required></textarea><br><br>
+
+    <label for="telefono">Teléfono de contacto:</label><br>
+    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{7,15}" placeholder="Solo números"><br><br>
+
+    <label for="instrucciones">Instrucciones adicionales:</label><br>
+    <textarea id="instrucciones" name="instrucciones" rows="3" placeholder="Opcional"></textarea><br><br>
+
+    <button type="submit" id="botonEnviar">Enviar datos de envío</button>
+    <button type="button" id="botonVolver">Volver al pedido</button>
+  </form>
+
+  <script src="script-envio.js"></script>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Bbas+Neue:wght@400;700&display=swap" rel="stylesheet">
+</body>
+</html>
