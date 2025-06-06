@@ -231,3 +231,35 @@ footer p:last-child {
 .mod-section h3 {
   margin: 0.5em 0 0.2em;
 }
+
+/* === Botón de Mods como elemento button === */
+.mods-button {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 0.8em 2em;
+  font-size: 1em;
+  font-family: 'Eurostile', 'Roboto', sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mods-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Opcional: centrado si lo deseas */
+/* Ajusta o elimina según cómo quieras que se alinee */
+.mods-button-container {
+  margin: 2em auto;
+  text-align: center;
+}
+
+/* === Filtro color mostaza para íconos sociales === */
+.mustard-yellow {
+  /* Ajusta estos valores si deseas un tono distinto */
+  filter: invert(62%) sepia(85%) saturate(600%) hue-rotate(355deg) brightness(95%) contrast(90%);
+}
