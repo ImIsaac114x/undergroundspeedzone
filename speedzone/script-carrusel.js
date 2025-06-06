@@ -85,6 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
     doc.text(lines, margin, 60);
 
     // 8) Nombre final del PDF y descarga
-    doc.save('Need_for_Speed_Underground_Info.pdf');
+    doc.save('Need_for_Speed_Info.pdf');
   });
 });
