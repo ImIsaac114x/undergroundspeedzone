@@ -48,3 +48,43 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// ---------- Bloque para generar PDF de la sección .intro ----------
+document.addEventListener('DOMContentLoaded', () => {
+  // 1) Esperamos a que exista el botón
+  const btnDescargar = document.getElementById('download-pdf');
+  if (!btnDescargar) return;
+
+  btnDescargar.addEventListener('click', () => {
+    // 2) Obtenemos jsPDF desde window.jspdf
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF({
+      unit: 'pt',
+      format: 'letter'
+    });
+
+    // 3) Seleccionamos el contenedor con la info del videojuego
+    const introElement = document.querySelector('.intro');
+    if (!introElement) {
+      alert('No se encontró la sección de información.');
+      return;
+    }
+
+    // 4) Obtenemos el texto completo (incluye títulos, párrafos, etc.)
+    const text = introElement.innerText.trim();
+
+    // 5) Parámetros de margen y ancho útil de página
+    const pageWidth = doc.internal.pageSize.getWidth();
+    const margin = 40; // en puntos (pt)
+    const usableWidth = pageWidth - margin * 2;
+
+    // 6) Dividimos el texto en líneas que quepan en 'usableWidth'
+    const lines = doc.splitTextToSize(text, usableWidth);
+
+    // 7) Escribimos el contenido en el PDF, empezando a 40pt desde arriba
+    doc.text(lines, margin, 60);
+
+    // 8) Nombre final del PDF y descarga
+    doc.save('Need_for_Speed_Underground_Info.pdf');
+  });
+});
