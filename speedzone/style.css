@@ -1,11 +1,14 @@
 /* === Fuentes y fondo general === */
 @font-face {
   font-family: 'Eurostile';
-  src: url('Eurostilebold.woff2') format('woff2'),
-       url('Eurostilebold.woff') format('woff');
+  /* Usar ruta absoluta en lugar de relativa */
+  src: url('https://imisaac114x.github.io/undergroundspeedzone/sources/fonts/EurostileBold.woff2') format('woff2'),
+       url('https://imisaac114x.github.io/undergroundspeedzone/sources/fonts/EurostileBold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
+/* Resto del CSS permanece igual */
 
 body {
   background-image: url("city.jpg");
