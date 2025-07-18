@@ -82,5 +82,25 @@
     </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="https://imisaac114x.github.io/undergroundspeedzone/speedzone/script-carrusel.js"></script>
+<script>
+    // Deshabilitar clic derecho
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // Deshabilitar atajos de teclado para herramientas de desarrollador
+    document.onkeydown = function(e) {
+        if (e.keyCode == 123) { // F12
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    };
+</script>
   </body>
 </html>
